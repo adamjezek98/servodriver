@@ -11,16 +11,14 @@ void setup() {
   }
   
 void loop() {
-    for(int i = 0; i < 180; i++) {
+    for(int i = 0; i < 180; i++) { //rotates servo to left
     setServo(0, i);
- //   Serial.println(i);
     delay(20);
     }
     delay(500);
     
-     for(int i = 180; i > 0; i--) {
+     for(int i = 180; i > 0; i--) { //and back to right
     setServo(0, i);
-    // Serial.println(i);
     delay(20);
     }
     
